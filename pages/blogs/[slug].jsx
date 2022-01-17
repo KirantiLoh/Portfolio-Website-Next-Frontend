@@ -7,12 +7,12 @@ import Image from 'next/image'
 
 const BlogPage = (props) => {
 
-    const blog = props.blog ? props.blog : []
+    const blog = props.blog
 
     return (
         <div className='blog-page'>
             <Head>
-                <title>Maurice Yang&apos;s Blog | {blog.title}</title>
+                <title>Maurice Yang&apos;s Blog | {blog?.title}</title>
             </Head>
             <Header/>
             <main>
