@@ -1,8 +1,8 @@
-import React, {useState} from 'react'
+import React from 'react'
 import Image from 'next/image'
 
 const Project = (props) => {
-    const [projects, setProjects] = useState(props.projects ? props.projects : [])
+    const projects = props.projects ? props.projects : []
 
     return (
         <div id='projects'>

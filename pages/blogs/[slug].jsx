@@ -7,7 +7,7 @@ import Image from 'next/image'
 
 const BlogPage = (props) => {
 
-    const blog = props.blog
+    const blog = props.blog ? props.blog : []
 
     return (
         <div className='blog-page'>
