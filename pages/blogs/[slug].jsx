@@ -16,11 +16,11 @@ const BlogPage = (props) => {
             </Head>
             <Header/>
             <main>
-                <h1 className="title">{blog.title}</h1>
+                <h1 className="title">{blog?.title}</h1>
                 <div className="image-container">
                     <Image src={'http://res.cloudinary.com/kirantiloh-bucket/' + blog.thumbnail} alt={blog.title} width={600} height={250} layout='responsive' objectFit='contain' />
                 </div>
-                <p className="content" dangerouslySetInnerHTML={{__html : blog.content.replace(/(?:\r\n|\r|\n)/g, "<br>")}}>
+                <p className="content" dangerouslySetInnerHTML={{__html : blog?.content.replace(/(?:\r\n|\r|\n)/g, "<br>")}}>
                 </p>
             </main>
             <Footer/>
