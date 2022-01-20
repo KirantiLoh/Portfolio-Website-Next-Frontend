@@ -1,14 +1,21 @@
 import React from 'react'
 import Image from 'next/image'
+import { useEffect } from 'react'
 
 const Project = (props) => {
     const projects = props.projects ? props.projects : []
+
+
+    useEffect(() => {
+        console.log(typeof projects[0].date_created)
+    }, [])
 
     return (
         <div id='projects'>
             <h1 className="title">Latest Projects</h1>
             <ul className="projects">
             {projects.map(project => {
+                let completionDate = new Date(project.date_created)
                 return (
                     <li className="project" key={project.id}>
                         <div className="container">
@@ -17,7 +24,7 @@ const Project = (props) => {
                             </div>
                             <h1 className="project-title">{project.title}</h1>
                             <p className="desc">{project.desc}</p>
-                            <p className="desc">Completion Date : {project.date_created.toLocaleString()}</p>
+                            <p className="desc">Completion Date : {completionDate.toLocaleDateString()}</p>
                             <a href={project.url} target='_blank' rel='noreferrer' className="visit-site-btn">Visit Site</a>
                             {
                                 project.link_backend ? (
