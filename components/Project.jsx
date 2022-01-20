@@ -17,7 +17,7 @@ const Project = (props) => {
                             </div>
                             <h1 className="project-title">{project.title}</h1>
                             <p className="desc">{project.desc}</p>
-                            <p className="desc">Completion Date : {project.date_created}</p>
+                            <p className="desc">Completion Date : {project.date_created.toLocaleString()}</p>
                             <a href={project.url} target='_blank' rel='noreferrer' className="visit-site-btn">Visit Site</a>
                             {
                                 project.link_backend ? (
