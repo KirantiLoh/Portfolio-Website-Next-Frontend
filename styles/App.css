@@ -325,31 +325,20 @@ body {
 
 .skills {
     width: 100%;
-    display: flex;
+    display: grid;
+    padding: 10px;
+    gap: 10px;
     list-style: none;
-    align-items: baseline;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .skill {
     text-align: center;
-    height: 170px;
-    width: max-content;
-    margin: 10px 20px;
-}
-
-.skill:nth-child(1) img {
-    width: 300px;
-}
-
-.skill:nth-child(4) img {
-    height: 125px;
-    width: auto;
 }
 
 .skill img {
-    width: 150px;
+    object-fit: cover;
 }
 
 .services {
@@ -449,6 +438,7 @@ body {
 
 .success-card,
 .fail-card {
+    display: none;
     position: fixed;
     top: 50%;
     transform: translateY(-50%) rotateY(90deg);
@@ -564,11 +554,17 @@ footer {
         font-size: 1.5rem;
     }
     .hero {
-        display: block;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         height: max-content;
     }
     .intro {
-        margin: 100px 30px;
+        height: calc(100vh - 75px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
     }
     .heading {
         font-size: 2.5rem;
@@ -635,5 +631,8 @@ footer {
     .skills {
         flex-direction: column;
         align-items: center;
+    }
+    .contact-form {
+        text-align: center;
     }
 }

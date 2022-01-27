@@ -5,11 +5,6 @@ import { useEffect } from 'react'
 const Project = (props) => {
     const projects = props.projects ? props.projects : []
 
-
-    useEffect(() => {
-        console.log(typeof projects[0].date_created)
-    }, [])
-
     return (
         <div id='projects'>
             <h1 className="title">Latest Projects</h1>

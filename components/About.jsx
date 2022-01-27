@@ -5,6 +5,7 @@ import ReactLogo from '../public/skills/react.png'
 import HTMLLogo from '../public/skills/html.png'
 import CSSLogo from '../public/skills/css.png'
 import JSLogo from '../public/skills/js-logo.png'
+import NextJSLogo from '../public/skills/next-js.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLayerGroup, faServer } from '@fortawesome/free-solid-svg-icons'
 import { faReact } from '@fortawesome/free-brands-svg-icons'
@@ -26,23 +27,39 @@ const About = () => {
             <div className="skill-container">
                 <ul className="skills">
                 <li className="skill">
-                    <Image src={Django} alt="Django Logo" width={300} height={130}/>
+                    <div className="image-container">
+                        <Image src={Django} alt="Django Logo" width={300} height={130}/>
+                    </div>
                     <p className="desc">Django</p>
                 </li>
                 <li className="skill">
+                    <div className="image-container">
                     <Image src={ReactLogo} alt="React JS Logo" width={150} height={135}/>
+                    </div>
                     <p className="desc">React JS</p>
                 </li>
                 <li className="skill">
+                    <div className="image-container">
+                    <Image src={NextJSLogo} alt="NextJS logo"  width={150} height={150}/>
+                    </div>
+                    <p className="desc">Next JS</p>
+                </li>
+                <li className="skill">
+                    <div className="image-container">
                     <Image src={HTMLLogo} alt="HTML Logo"  width={150} height={130} />
+                    </div>
                     <p className="desc">HTML</p>
                 </li>
                 <li className="skill">
+                    <div className="image-container">
                     <Image src={CSSLogo} alt="CSS Logo" width={110} height={125} />
+                    </div>
                     <p className="desc">CSS</p>
                 </li>
                 <li className="skill">
+                    <div className="image-container">
                     <Image src={JSLogo} alt="JS logo"  width={150} height={150}/>
+                    </div>
                     <p className="desc">Javascript</p>
                 </li>
             </ul>

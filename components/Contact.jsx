@@ -18,9 +18,11 @@ const Contact = () => {
         if(name && email && message) {
             emailjs.sendForm('service-kirantiloh','template_dy7j0k7', e.target , 'user_OYUf1eDui1cL9YUTBL4lG')
             .then((result) => {
+                successCardRef.current.style.display = "block"
                 successCardRef.current.style.transform = "translateY(-50%) rotateY(0deg)"
                 setTimeout(() => successCardRef.current.style.transform = "translateY(-50%) rotateY(90deg)", 2000)
             }, (error) => {
+                failCardRef.current.style.display = "block"
                 failCardRef.current.style.transform = "translateY(-50%) rotateY(0deg)"
                 setTimeout(() => failCardRef.current.style.transform = "translateY(-50%) rotateY(90deg)", 2000)
             })

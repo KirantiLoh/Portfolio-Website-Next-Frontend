@@ -12,7 +12,7 @@ export default function Home(props) {
     <div className="App">
       <Head>
         <title>Maurice Yang</title>
-          <meta charset="UTF-8"/>
+          <meta charSet="UTF-8"/>
           <meta name="description" content="Maurice Yang is a fullstack web developer who specializes in developing websites using React JS and Django, constantly finding a way to improve both my technical skills and teamwork with other people. I&apos;m passionate to learn about all the wonderful new technologies. Had experience in deploying websites both in Heroku and Netlify."/>
           <meta name="keywords" content="Maurice Yang"/>
           <meta name="author" content="Maurice Yang"/>
