@@ -74,12 +74,12 @@ body {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    color: var(--primary-text-color);
+    color: var(--primary-color);
 }
 
 .logo a span {
     margin-left: 10px;
-    color: var(--primary-color);
+    color: var(--primary-text-color);
 }
 
 .logo img {
