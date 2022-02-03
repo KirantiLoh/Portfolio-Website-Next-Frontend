@@ -31,7 +31,7 @@ export default function Home(props) {
 }
 
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   let response = await fetch('https://maurice-portfolio-backend.herokuapp.com/api/projects', {
       method:"GET",
       headers: {
@@ -42,6 +42,7 @@ export async function getServerSideProps() {
   return {
       props: {
           projects: data,
+          revalidate: 5*60,
       }
   }
 }
