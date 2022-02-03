@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowDown, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faFile, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import FadeIn from 'react-fade-in/lib/FadeIn'
 import HeroImage from '../public/hero-img.png'
 import { faInstagram, faLinkedin, faGithub, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons'
@@ -22,7 +22,7 @@ const Hero = () => {
                         I&apos;m a fullstack web developer who specializes in developing websites using Next JS and Django, constantly finding a way to improve both my technical skills and teamwork with other people. I&apos;m passionate to learn about all the wonderful new technologies. Had experience in deploying websites both in Heroku and Netlify.
                     </p>
                     <a href="#contact-me" id='contact-me-btn'><FontAwesomeIcon icon={faEnvelope}/> Contact Me</a>
-                    <a href="#about" className='secondary-btn'><FontAwesomeIcon icon={faArrowDown}/> Learn More</a>
+                    <a href="https://drive.google.com/file/d/1kbyERvxDIDtyPVyfVPqdipcC_f49gvx5/view?usp=sharing" target="_blank" rel='noreferrer' className='secondary-btn'><FontAwesomeIcon icon={faFile}/> Check CV</a>
                 </div>
                 <div className='photo-and-links'>
                     <div className="photo">
